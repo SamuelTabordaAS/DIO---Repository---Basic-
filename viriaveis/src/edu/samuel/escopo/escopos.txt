@@ -1,0 +1,17 @@
+- Escopo pode ser definido com o ambiente onde uma variavel pode ser acessada ! 
+o escopo da variavel é seu ambiente de declaracao, nao podendo ser acessada fora desse bloco. 
+- Claro voce declare um variavel dentro de um metodo ela esta disponel dentro deste metodo apenas 
+- sem o dominio de escopo o codigo pode conter falhas estruturais. 
+
+No ambiente abaixo teremos duas varias, uma de escopo de classe e outra local ! 
+
+
+public class Conta { 
+    // variavel de escopo de uma classe onde dentro dessa CLASSE pode ser acessada de qualquer lugar
+    double saldo = 0 ; 
+
+    public void sacar (Double valor){ 
+        variavel VALOR onde seu escopo é local e so pode ser acessado dentro do metodo 
+    }
+
+}
