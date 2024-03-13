@@ -1,15 +1,15 @@
 package estruturaDeDados.filas.implementandoFilas;
 
-public class NoFila {
+public class NoFila<T> {
 
-    private Object object ; 
+    private T object ; 
 
-    private  NoFila filaRefNo ; 
+    private  NoFila<T> filaRefNo ; 
 
     public NoFila(){
     }
 
-    public NoFila(Object object){ 
+    public NoFila(T object){ 
         this.filaRefNo = null ; 
         this.object = object ; 
     }
@@ -18,7 +18,7 @@ public class NoFila {
         return object;
     }
 
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 

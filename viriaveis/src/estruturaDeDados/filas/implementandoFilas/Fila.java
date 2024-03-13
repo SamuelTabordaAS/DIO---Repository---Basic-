@@ -1,14 +1,14 @@
 package estruturaDeDados.filas.implementandoFilas;
 
-public class Fila {
+public class Fila<T> {
     
-    private NoFila refEntradaFila ; 
+    private NoFila<T> refEntradaFila ; 
 
     public Fila() { 
         this.refEntradaFila = null ; 
     }
 
-    public Object first(){ 
+    public T first(){ 
         if(!isEmpty()){ 
             NoFila primeiroNo = refEntradaFila ; 
             while(true){ 
@@ -22,13 +22,13 @@ public class Fila {
                     break ; 
                 }
             }
-            return primeiroNo.getObject();
+            return (T) primeiroNo.getObject();
         }
 
         return null ; 
     }
 
-    public NoFila dequeue(){ 
+    public T dequeue(){ 
         if(!isEmpty()){ 
             NoFila primeiroNo = refEntradaFila ; 
             NoFila auxilar = refEntradaFila;
@@ -47,13 +47,13 @@ public class Fila {
                     break ; 
                 }
             }
-            return primeiroNo ; 
+            return (T) primeiroNo.getObject() ; 
         }
 
         return null ; 
     }
 
-    public void enqueue (Object obj){ 
+    public void enqueue (T obj){ 
         NoFila novoNo = new NoFila(obj);
         novoNo.setFilaRefNo(refEntradaFila);
         this.refEntradaFila = novoNo ; 
