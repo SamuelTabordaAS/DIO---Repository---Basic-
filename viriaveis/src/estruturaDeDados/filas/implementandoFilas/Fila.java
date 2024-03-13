@@ -8,7 +8,7 @@ public class Fila {
         this.refEntradaFila = null ; 
     }
 
-    public NoFila first(){ 
+    public Object first(){ 
         if(!isEmpty()){ 
             NoFila primeiroNo = refEntradaFila ; 
             while(true){ 
@@ -22,7 +22,7 @@ public class Fila {
                     break ; 
                 }
             }
-            return primeiroNo;
+            return primeiroNo.getObject();
         }
 
         return null ; 
@@ -53,7 +53,8 @@ public class Fila {
         return null ; 
     }
 
-    public void enqueue (NoFila novoNo){ 
+    public void enqueue (Object obj){ 
+        NoFila novoNo = new NoFila(obj);
         novoNo.setFilaRefNo(refEntradaFila);
         this.refEntradaFila = novoNo ; 
     }
