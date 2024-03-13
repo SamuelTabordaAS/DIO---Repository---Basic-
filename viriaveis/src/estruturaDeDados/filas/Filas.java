@@ -16,6 +16,9 @@ public class Filas {
      * METODO FIRST(){ 
      * Pega o primeiro objeto da fila 
      * }
+     * METODO Dequeue(){ 
+     * Pega o primeiro objeto da fila e retira ele da fila 
+     * }
      * 
     */
 

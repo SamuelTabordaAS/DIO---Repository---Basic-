@@ -1,3 +1,4 @@
+/* 
 package poo.abstracao;
 
 public class ComputerSamuel {
@@ -11,3 +12,4 @@ public class ComputerSamuel {
         tlg.receber();
     }
 }
+*/

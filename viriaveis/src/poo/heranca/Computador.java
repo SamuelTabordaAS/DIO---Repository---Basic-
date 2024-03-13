@@ -1,3 +1,4 @@
+/*
 package poo.heranca;
 
 public class Computador {
@@ -9,3 +10,4 @@ public class Computador {
          // desta forma as classes herdaram as acoes da SERVICO......
     }
 }
+*/

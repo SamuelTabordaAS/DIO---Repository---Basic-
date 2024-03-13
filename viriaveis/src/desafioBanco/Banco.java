@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Banco {
     public String nome ;
+    @SuppressWarnings("unused")
     private List<Conta> contas;
 
 
